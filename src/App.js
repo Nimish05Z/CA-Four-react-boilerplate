@@ -1,18 +1,32 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import questions from "./questions";
-import Result from "./components/Result";
-import QuestionBox from "./components/QuestionBox";
+// App.js
+import React, { useState } from "react";
+import NavBar from "./components/Items/NavBar";
+import QuestionBox from "./components/Items/QuesionBox";
+import "./App.css"; // Import your global styles
 
+const App = () => {
+  const [isDarkMode, setDarkMode] = useState(false);
+  const [isHighlighting, setHighlighting] = useState(false);
 
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
 
-function App() {
+  const toggleHighlighting = () => {
+    setHighlighting((prevHighlighting) => !prevHighlighting);
+  };
 
   return (
-    <div>
-      
+    <div className={`app-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+      <NavBar
+        isDarkMode={isDarkMode}
+        toggleDarkMode={toggleDarkMode}
+        toggleHighlighting={toggleHighlighting}
+        isHighlighting={isHighlighting}
+      />
+      <QuestionBox isHighlighted={isHighlighting} isDarkMode={isDarkMode} />
     </div>
   );
-}
+};
 
 export default App;
