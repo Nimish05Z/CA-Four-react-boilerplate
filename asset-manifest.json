@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CA-Four-react-boilerplate/static/css/main.1a54c9a9.css",
+    "main.js": "/CA-Four-react-boilerplate/static/js/main.f2d712a0.js",
+    "static/media/logo.png": "/CA-Four-react-boilerplate/static/media/logo.c2e09f47bb93d13838d2.png",
+    "index.html": "/CA-Four-react-boilerplate/index.html",
+    "main.1a54c9a9.css.map": "/CA-Four-react-boilerplate/static/css/main.1a54c9a9.css.map",
+    "main.f2d712a0.js.map": "/CA-Four-react-boilerplate/static/js/main.f2d712a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a54c9a9.css",
+    "static/js/main.f2d712a0.js"
+  ]
+}
